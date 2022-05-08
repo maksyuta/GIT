@@ -123,7 +123,7 @@ git push
 Нажать на кнопку Commit new file
 ```
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
- 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
 
 Нажать иконку "Карандаш" 
 ```json
@@ -143,10 +143,12 @@ git push
    "Environment": "Windows 10 Pro, Chrome v101",
   "Reproducibility":"Usually"
 }
-"В поле Commit changes написать Update bug_report.json
-Нажать на кнопку Commit changes"
 ```
-
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+```
+В поле Commit changes написать Update bug_report.json
+Нажать на кнопку Commit changes
+```
  20. Синхронизировать внешний и локальный репозиторий JSON
  ```bash
  git pull
