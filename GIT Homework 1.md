@@ -143,8 +143,10 @@ git push
    "Environment": "Windows 10 Pro, Chrome v101",
   "Reproducibility":"Usually"
 }
-```В поле Commit changes написать Update bug_report.json
+```
+В поле Commit changes написать Update bug_report.json
 Нажать на кнопку Commit changes
+```
 ```
  20. Синхронизировать внешний и локальный репозиторий JSON
  ```bash
