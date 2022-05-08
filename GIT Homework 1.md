@@ -144,8 +144,8 @@ git push
   "Reproducibility":"Usually"
 }
 
-В поле Commit changes написать Update bug_report.json
-Нажать на кнопку Commit changes
+//В поле Commit changes написать Update bug_report.json
+//Нажать на кнопку Commit changes
 ```
  20. Синхронизировать внешний и локальный репозиторий JSON
  ```bash
