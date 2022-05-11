@@ -25,8 +25,8 @@ git push -u origin Checklists
 git push -u origin Bug Reports
 git push -u origin Bug_Reports
 git push -u origin SQL
-git push -u Charles
-git push -u Mobile_testing
+git push -u origin Charles
+git push -u origin Mobile_testing
 ```
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 ```bash
