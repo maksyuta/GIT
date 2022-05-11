@@ -33,6 +33,8 @@ git push -u origin Mobile_testing
 git checkout Bug_Reports
 touch bug_report.txt
 vim bug_report.txt
+Press button "i"
+
  1  ID - Уникальный идентификационный номер
  2 - Summary/Title - Что? Где? Когда?
  3 - STR - Шаги воспроизведения
@@ -48,6 +50,9 @@ vim bug_report.txt
  13 - Author - Тот, кто нашёл баг
  14 - Assigned to - Назначен
  15 - Attachments - Логи/скриншоты/видео
+ 
+ Esc
+ :wq
 ```
 4. Запушить структуру багрепорта на внешний репозиторий
 ```bash
@@ -69,6 +74,7 @@ git push
 git checkout CheckLists
 touch checklist.txt
 vim checklist.txt
+Press button "i"
 
 ID
 Summary
@@ -77,6 +83,9 @@ Enviroment
 Expected Result
 Status
 Bug report link
+
+Esc
+:wq
 ```
 8. Запушить структуру на внешний репозиторий
 ```bash
