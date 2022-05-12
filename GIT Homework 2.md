@@ -11,7 +11,6 @@ git branch Postman
 git branch Jmeter
 git branch Checklists
 git branch Bug Reports
-git branch Bug_Reports
 git branch SQL
 git branch Charles
 git branch Mobile_testing
@@ -19,14 +18,7 @@ git branch Mobile_testing
 
 2. Запушить все ветки на внешний репозиторий
 ```bash
-git push -u origin Postman
-git push -u origin Jmeter
-git push -u origin Checklists
-git push -u origin Bug Reports
-git push -u origin Bug_Reports
-git push -u origin SQL
-git push -u origin Charles
-git push -u origin Mobile_testing
+git push -u origin all
 ```
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 ```bash
@@ -35,15 +27,15 @@ touch bug_report.txt
 vim bug_report.txt
 Press button "i"
 
- 1  ID - Уникальный идентификационный номер
- 2 - Summary/Title - Что? Где? Когда?
- 3 - STR - Шаги воспроизведения
- 4 - Actual Result - Фактический результат
- 5 - Expected Result - Ожидаемый результат
- 6 - Environment - Окружение 
- 7 - Project - Название проекта
- 8 - Module - Компонент/модуль/юнит, в котором обнаружен дефект
- 9 - Build - Версия сборки
+ 1 - ID - Уникальный идентификационный номер
+ 2 - Environment - Окружение 
+ 3 - Module - Компонент/модуль/юнит, в котором обнаружен дефект
+ 4 - Project - Название проекта
+ 5 - Build - Версия сборки
+ 6 - Summary/Title - Что? Где? Когда?
+ 7 - STR - Шаги воспроизведения
+ 8 - Actual Result - Фактический результат
+ 9 - Expected Result - Ожидаемый результат
  10 - Severity - Критичность бага по степени влияния на продукт
  11 - Priority - Критичность бага по степени влияния на бизнес
  12 - Status - Статус бага в жизненном цикле бага
@@ -76,13 +68,12 @@ touch checklist.txt
 vim checklist.txt
 Press button "i"
 
-ID
-Summary
-Section
-Enviroment
-Expected Result
+Check list ID
+Check list summary
 Status
-Bug report link
+Tester
+Test date
+Comment
 
 Esc
 :wq
