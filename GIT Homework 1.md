@@ -38,7 +38,7 @@ git clone https://github.com/maksyuta/JSON.git
  Press the button "i"
 
  {
-	"name":"Sergey"
+	"name":"Maksyuta Sergey Yurievich"
 	"age":"36"
 	"Pets":"1"
 	"salary":"350$"
@@ -55,7 +55,7 @@ Esc
  ```bash
  touch preferences.json
  ```
- 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страну которую хотели бы посетить) в формате JSON.
  ```bash
  vim preferences.json
   Press the button "i"
@@ -102,13 +102,14 @@ Esc
     "25.": "Нагрузочное тестирование в Jmeter",
     "26.": "Методология разработки Scrum",
     "27.": "Python. (Изучение основ. Создание клиент серверного приложения)"
+    }
 Esc
 :wq
 ```
  15. Отправить сразу 2 файла на внешний репозиторий.
 ```bash
 git add skills.json preferences.json
-git commit -am "add new files preferences.json skills.json"
+git commit -m "add new files preferences.json skills.json"
 git push
 ```
  16. На веб интерфейсе создать файл bug_report.json.
@@ -178,7 +179,7 @@ XML
  ```
  25. Закоммитить файл.
  ```bash
-git commit -am "add new file new.xml"
+git commit -m "add new file new.xml"
 ```
  26. Отправить файл на внешний GitHub репозиторий.
 ```bash
@@ -188,17 +189,20 @@ git push
  vim new.xml
  Press the button "i"
 ```xml
-<name>Sergey</name>
-<age>36</age>
-<pets>1</pets>
-<salary>350$</salary>
+<about>
+   <name>Sergey</name>
+   <age>36</age>
+   <pets>1</pets>
+   <salary>350$</salary>
+</about>
+
 Esc
 :wq
 ```
  28. Отправить изменения на внешний репозиторий.
  ```bash
  git add
- git commit -am "add new file new.xml"
+ git commit -m "add new file new.xml"
  git push
  ```
  29. Создать файл preferences.xml
@@ -210,18 +214,24 @@ Esc
  ```bash
  vim preferences.xml
  Press button "i"
-<favorite_movie>Forsage 5</favorit_movie>
-<favorite_serial>La casa de papel</favorite_serial>
-<favorite_eat>Meat</favorite_eat>
-<favorite_seasons>Summer</favorite_seasons>
-<favorite_country>Sweden</favorite_country>
+ <favotites>
+ 	<favorite_movie>Forsage 5</favorit_movie>
+	<favorite_serial>La casa de papel</favorite_serial>
+	<favorite_eat>Meat</favorite_eat>
+	<favorite_seasons>Summer</favorite_seasons>
+	<favorite_country>Sweden</favorite_country>
+</favorites>
+
+Esc
+:wq
 ```
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
  ```bash
  touch skills.xml
  vim skills.xml
  Press buttion "i"
- <item_1>Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC> </item_1>
+ <skills>
+    <item_1>Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC> </item_1>
     <item_2>Что такое клиент-серверная архитектура</item_2>
     <item_3>HTTP Методы запросов на сервер</item_3>
     <item_4>Коды ответов HTTP сервера</item_4>
@@ -248,6 +258,7 @@ Esc
     <item_25>Нагрузочное тестирование в Jmeter</item_25>
     <item_26>Методология разработки Scrum</item_26>
     <item_27>Python. (Изучение основ. Создание клиент серверного приложения)</item_27>
+ </skills>
     
     Esc
     :wq
@@ -255,7 +266,7 @@ Esc
 
  32. Сделать коммит в одну строку.
  ```bash
- git add . | git commit -m "add new files preferences.xml skills.xml"
+ git add . && git commit -m "add 2 new XML files"
 ```
  33. Отправить сразу 2 файла на внешний репозиторий.
 ```bash
@@ -276,7 +287,7 @@ git push
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
   ```xml
    Нажать иконку "Карандаш" 
-
+<bug_report>
  <ID>1</ID>
   <Module>Web site</Module>
   <Summary>Non-clickable link 'Click on the chat icon'</Summary>
@@ -291,6 +302,7 @@ git push
    <Severity>Medium</Severity>
 <Environment>Windows 10 Pro, Chrome v101</Enviroment>
  <Reproducibility>Usually</Reproducibility>
+</bug_report>
 
 В поле Commit changes написать Update bug_report.xml
 Нажать на кнопку Commit changes
@@ -345,7 +357,7 @@ Esc
 ```
  8. Отправить изменения на внешний репозиторий.
  ```bash
-  git add new.txt | git commit -am "update file new.txt"
+  git add new.txt | git commit -m "update file new.txt"
   git push
   ```
  9. Создать файл preferences.txt
@@ -406,7 +418,7 @@ Esc
 
  12. Сделать коммит в одну строку.
  ```bash
- git add . | git commit -am "add 2 files preferences.txt skills.txt"
+ git add . && git commit -m "add 2 TXT files"
 ```
  13. Отправить сразу 2 файла на внешний репозиторий.
  ```bash
