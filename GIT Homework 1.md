@@ -189,7 +189,7 @@ git push
  vim new.xml
  Press the button "i"
 ```xml
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <about>
    <name>Sergey</name>
    <age>36</age>
