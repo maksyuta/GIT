@@ -38,9 +38,9 @@ git clone https://github.com/maksyuta/JSON.git
  Press the button "i"
 
  {
-	"name":"Maksyuta Sergey Yurievich"
-	"age":"36"
-	"Pets":"1"
+	"name":"Maksyuta Sergey Yurievich",
+	"age":"36",
+	"Pets":"1",
 	"salary":"350$"
 }
 Esc
@@ -60,10 +60,10 @@ Esc
  vim preferences.json
   Press the button "i"
  {
-"favorite_movie":"Forsage 5"
-"favorite_serial":"La casa de papel"
-"favorite_eat":"Meat"
-"favorite_seasons":"Summer"
+"favorite_movie":"Forsage 5",
+"favorite_serial":"La casa de papel",
+"favorite_eat":"Meat",
+"favorite_seasons":"Summer",
 "favorite_country":"Sweden"
 }
 Esc
@@ -189,6 +189,7 @@ git push
  vim new.xml
  Press the button "i"
 ```xml
+ <?xml version="1.0" encoding="utf-8"?>
 <about>
    <name>Sergey</name>
    <age>36</age>
@@ -214,8 +215,9 @@ Esc
  ```bash
  vim preferences.xml
  Press button "i"
- <favotites>
- 	<favorite_movie>Forsage 5</favorit_movie>
+ <?xml version="1.0" encoding="utf-8"?>
+ <favorites>
+ 	<favorite_movie>Forsage 5</favorite_movie>
 	<favorite_serial>La casa de papel</favorite_serial>
 	<favorite_eat>Meat</favorite_eat>
 	<favorite_seasons>Summer</favorite_seasons>
@@ -230,6 +232,7 @@ Esc
  touch skills.xml
  vim skills.xml
  Press buttion "i"
+  <?xml version="1.0" encoding="utf-8"?>
  <skills>
     <item_1>Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC> </item_1>
     <item_2>Что такое клиент-серверная архитектура</item_2>
@@ -287,20 +290,21 @@ git push
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
   ```xml
    Нажать иконку "Карандаш" 
+ <?xml version="1.0" encoding="utf-8"?>
 <bug_report>
  <ID>1</ID>
   <Module>Web site</Module>
   <Summary>Non-clickable link 'Click on the chat icon'</Summary>
   <STR>    
-              <1>Open the site https://nopass.us/#/</1>
-              <2>At the bottom of the site, click 'Support'</2>
-              <3>In the header of the page, select 'CONTACT US'",</3>
-    <4>At the bottom of the site, click on the link 'Click on the Chat icon'</4>
+              <Number1>Open the site https://nopass.us/#/</Number1>
+              <Number2>At the bottom of the site, click 'Support'</Number2>
+              <Number3>In the header of the page, select 'CONTACT US'"</Number3>
+    <Number4>At the bottom of the site, click on the link 'Click on the Chat icon'</Number4>
        </STR>                     ,
-   <Expected result>Support chat opens</Expected result>
-   <Actual result>Support chat not opening</Actual result>                   
+   <Expected_result>Support chat opens</Expected_result>
+   <Actual_result>Support chat not opening</Actual_result>                   
    <Severity>Medium</Severity>
-<Environment>Windows 10 Pro, Chrome v101</Enviroment>
+<Enviroment>Windows 10 Pro, Chrome v101</Enviroment>
  <Reproducibility>Usually</Reproducibility>
 </bug_report>
 
